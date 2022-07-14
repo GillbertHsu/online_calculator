@@ -1,21 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        h1 {
+            color: rgb(73, 18, 224);
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 50px;
+        }
+        
+        body {
+            text-align: center;
+            background-color: aquamarine;
+        }
+        
+        input[type='submit']{
+            display: inline-block;
+            border-radius: 10px;
+            box-shadow: 0 0 2px #888;
+            padding: 0.5em 0.6em;
+            width: 50px;
+            height: 40px;
+            border:darkorange;
+            margin-right: 20px;
+            margin-left: 20px;
+        } 
+        
+        
+        input[type='submit']:hover{
+            background-color: grey;
+            color: white;
+        }
+        
+        .input {
+            height: 50px;
+        }
+        
+        input[type='number']{
+            height: 30px;
+            width: 150px;
+            margin-right: 5px;
+            margin-left: 5px;
+            border-style: inset;
+        } 
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
 <body>
-    <h1>Simple calculator</h1>
+    <h1><strong>Simple calculator</strong></h1>
     <form method="POST" action = "/">
-        <input type="number" name = "num1" placeholder="first num">
-        <input type="number" name = "num2" placeholder="second num">
-        <input type="submit" name = "operator" value="+">
-        <input type="submit" name = "operator" value="-">
-        <input type="submit" name = "operator" value="*">
-        <input type="submit" name = "operator" value="/">
-        <input type="submit" name = "operator" value="log">
+        <div class="input">
+            <input type="number" name = "num1" placeholder="first num" style="font-size: large;">
+            <input type="number" name = "num2" placeholder="second num" style="font-size: large;">
+        </div>
+        <br>
+        <div class="button">
+            <input type="submit" name = "operator" value="+" style="font-size: large;">
+            <input type="submit" name = "operator" value="-" style="font-size: large;">
+            <input type="submit" name = "operator" value="*" style="font-size: large;">
+            <input type="submit" name = "operator" value="/" style="font-size: large;">
+            <br>
+            <br>
+            <br>
+            <input type="submit" name = "operator" value="log" style="border:darkorange; width: 100px; height: 40px; margin: auto;">
+        </div>
+        
     </form>
 </body>
 </html>
